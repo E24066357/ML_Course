@@ -55,7 +55,7 @@ def ml_loop(side: str):
     # 2. Inform the game process that ml process is ready
     def ml_loop_for_1P():
             finalx=100
-            if scene_info["ball"][1]>100 and (scene_info["ball_speed"][1] > 0):#往下掉
+            if scene_info["ball_speed"][1] > 0:#往下掉
                     finalx=scene_info["ball"][0]+scene_info["ball_speed"][0]*(420-scene_info["ball"][1])/scene_info["ball_speed"][1]
             else :
                 finalx=100 
